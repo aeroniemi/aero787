@@ -1,0 +1,17 @@
+[AERO787 INFO]: Initializing...
+[AERO787 INFO]: Path to module: C:\X-Plane 11.2/Aircraft/Boeing 787-8/plugins/SASL/data/modules/main.lua
+[AERO787 INFO]: Loading module...
+[AERO787 INFO]: [LUA]: loading	module
+[AERO787 INFO]: [LUA]: loading	B787PFDcore
+[AERO787 INFO]: [LUA]: loading	B787PFDhorizon
+[AERO787 INFO]: [LUA]: loading	B787PFDnav
+[AERO787 INFO]: [LUA]: loading	B787MFDcore
+[AERO787 INFO]: [LUA]: loading	B787MFDfuel
+[AERO787 INFO]: [LUA]: loading	B787MFDengine
+[AERO787 INFO]: [LUA]: loading	B787radioLcore
+[AERO787 INFO]: [LUA]: loading	B787RadioErrorPage
+[AERO787 INFO]: [LUA]: loading	B787RadioLvhf
+[AERO787 INFO]: [LUA]: loading	B787RadioLxpdr
+[AERO787 INFO]: [LUA]: loading	B787RadioLsettings
+[AERO787 INFO]: Loading cursors...
+[AERO787 INFO]: Module loaded
