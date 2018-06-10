@@ -4,6 +4,7 @@ local fuelImage = loadImage("images/fuel.png")
 local sat = globalPropertyf("sim/cockpit2/temperature/outside_air_temp_degc")
 local totalFuel = globalPropertyf("sim/flightmodel/weight/m_fuel_total")
 local grossWt = globalPropertyf("sim/flightmodel/weight/m_total")
+local fuelQty = globalPropertyfa("sim/cockpit2/fuel/fuel_quantity")
 function draw()
     --sim/cockpit2/temperature/outside_air_temp_degc -SAT
     --sim/flightmodel/weight/m_total - gweight
@@ -22,12 +23,19 @@ function draw()
     end
     local gross = 0
     local Fuel = 0
+    local FuelL = 0
+    local FuelR = 0
+    local FuelC = 0
+    local FuelQuty = get(fuelQty)
     if get(imperial) == 1 then
         gross = string.format("%.1f", get(grossWt) / 1000)
         fuel = string.format("%.1f", get(totalFuel) / 1000)
     else
         gross = string.format("%.1f", get(grossWt) * 0.45359237 / 1000)
         fuel = string.format("%.1f", get(totalFuel) * 0.45359237 / 1000)
+        fuelL = string.format("%.1f", FuelQuty[1] / 1000)
+        fuelC = string.format("%.1f", (FuelQuty[3] + FuelQuty[4]) / 1000)
+        fuelR = string.format("%.1f", FuelQuty[2] / 1000)
     end
     sasl.gl.drawRectangle(0, 0, 319, 165, colourGrey)
     sasl.gl.drawWidePolyLine({0, 0, 0, 165, 319, 165}, 2, colourWhite)
@@ -53,10 +61,10 @@ function draw()
         sasl.gl.drawText(fontLatoBold, 135, 58, "KGS X", 18, false, false, TEXT_ALIGN_CENTER, colourWhite)
         sasl.gl.drawText(fontLatoBold, 135, 38, "1000", 18, false, false, TEXT_ALIGN_CENTER, colourWhite)
 
-        sasl.gl.drawText(fontLatoBold, 79, 119, "7.1", 18, false, false, TEXT_ALIGN_RIGHT, colourWhite)
-        sasl.gl.drawText(fontLatoBold, 190, 119, "7.1", 18, false, false, TEXT_ALIGN_LEFT, colourWhite)
+        sasl.gl.drawText(fontLatoBold, 88, 119, fuelL, 18, false, false, TEXT_ALIGN_RIGHT, colourWhite)
+        sasl.gl.drawText(fontLatoBold, 190, 119, fuelR, 18, false, false, TEXT_ALIGN_LEFT, colourWhite)
 
-        sasl.gl.drawText(fontLatoBold, 139, 119, "7.1", 18, false, false, TEXT_ALIGN_CENTER, colourWhite)
+        sasl.gl.drawText(fontLatoBold, 139, 119, fuelC, 18, false, false, TEXT_ALIGN_CENTER, colourWhite)
     end
 
     drawAll(components)
