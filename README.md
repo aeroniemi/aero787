@@ -22,7 +22,7 @@ Download the repository, and extract to the folder of the aircraft
 
 ## Interested in helping?
 *   Message aeroniemi on the X-Plane.org forums
-*   Visit the forum thread here: https://forums.x-plane.org/index.php?/forums/topic/150166-787-display-mod/&tab=comments#comment-1427159
+*   Visit the forum thread here: https://forums.x-plane.org/index.php?/forums/topic/150166-787-display-mod/
 
 ### Bugs?
 Probably lots of them, splatted by the commit.
