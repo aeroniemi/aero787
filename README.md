@@ -7,7 +7,7 @@ A set of new displays for the payware VMAX 787 built using SASL, as part of my l
 *   Left MFD (engine data 95%, fuel data done)
 *   Left Multifunctional radio (all useful pages done with keyboard entry)
 
-## THings to note
+## Things to note
 *   At present the overhead panel and autopilot panels don't work, need 3d modelling to fix
 *   No navigational displays are fully functional
 *   No right-side displays
@@ -20,11 +20,11 @@ Download the repository, and extract to the folder of the aircraft
 *   Cameron (aircraft developer) for reuse permissions
 *   Efe (from vattastic)
 
-## Interested in helping?W
+## Interested in helping?
 *   Message aeroniemi on the X-Plane.org forums
 *   Visit the forum thread here: https://forums.x-plane.org/index.php?/forums/topic/150166-787-display-mod/&tab=comments#comment-1427159
 
-###Bugs?
+### Bugs?
 Probably lots of them, splatted by the commit.
 *   Report using a Github issue, as specific as possible
 *   Post something in the forum thread
