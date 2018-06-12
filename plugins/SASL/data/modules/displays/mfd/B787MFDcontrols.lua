@@ -1,0 +1,15 @@
+size = {637, 960}
+local longButtonImage = loadImage("images/twoWidthButton.png")
+local longButtonInvertedImage = loadImage("images/twoWidthButtonInverted.png")
+local shortButtonImage = loadImage("images/arrowWidthButton.png")
+local shortButtonInvertedImage = loadImage("images/arrowWidthButtonInverted.png")
+function draw()
+    drawAll(components)
+    sasl.gl.drawTexture(longButtonInvertedImage, 10, 895, 252, 65)
+    sasl.gl.drawTexture(longButtonImage, 262, 895, 252, 65)
+    sasl.gl.drawTexture(shortButtonImage, 534, 895, 93, 65)
+    sasl.gl.drawText(fontLato, 131, 915, "MAP", 35, false, false, TEXT_ALIGN_CENTER, colourWhite)
+    sasl.gl.drawText(fontLato, 383, 915, "PLAN", 35, false, false, TEXT_ALIGN_CENTER, colourWhite)
+    sasl.gl.drawText(fontLato, 580.5, 933, "MENU", 25, false, false, TEXT_ALIGN_CENTER, colourWhite)
+    sasl.gl.drawTriangle(580.5, 910, 590.5, 920, 570.5, 920, colourWhite)
+end

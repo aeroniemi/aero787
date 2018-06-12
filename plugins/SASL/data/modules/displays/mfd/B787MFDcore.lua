@@ -46,8 +46,23 @@ function draw()
 
     drawAll(components)
 end
+local conponent = {
+    B787MFDfuel {position = {1001, 0, 279, 200}},
+    B787MFDengine {position = {641, 0, 638, 960}}
+}
 
+function update()
+    updateAll(components)
+end
 components = {
     B787MFDfuel {position = {1001, 0, 279, 200}},
     B787MFDengine {position = {641, 0, 638, 960}}
 }
+if get(enableExperimentalDisplays) == 1 then
+    components = {
+        B787MFDfuel {position = {1001, 0, 279, 200}},
+        B787MFDengine {position = {641, 0, 638, 960}},
+        B787MFDcontrols {position = {0, 0, 638, 960}},
+        B787MFDnav {position = {0, 0, 638, 960}, clip = true}
+    }
+end
