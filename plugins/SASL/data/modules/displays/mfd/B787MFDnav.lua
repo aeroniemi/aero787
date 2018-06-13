@@ -4,11 +4,11 @@ local tas = globalPropertyf("sim/cockpit2/gauges/indicators/true_airspeed_kts_pi
 local windDirection = globalPropertyf("sim/cockpit2/gauges/indicators/wind_heading_deg_mag")
 local windSpeed = globalPropertyf("sim/cockpit2/gauges/indicators/wind_speed_kts")
 function draw()
-    sasl.gl.drawText(fontLatoBold, 10, 862, "GS", 20, false, false, TEXT_ALIGN_LEFT, colourWhite)
+    sasl.gl.drawText(fontLatoBold, 10, 867, "GS", 20, false, false, TEXT_ALIGN_LEFT, colourWhite)
     sasl.gl.drawText(
         fontLatoBold,
-        40,
-        862,
+        50,
+        867,
         string.format("%1.f", get(groundspeed)),
         26,
         false,
@@ -17,11 +17,11 @@ function draw()
         colourWhite
     )
 
-    sasl.gl.drawText(fontLatoBold, 70, 862, "TAS", 20, false, false, TEXT_ALIGN_LEFT, colourWhite)
+    sasl.gl.drawText(fontLatoBold, 70, 867, "TAS", 20, false, false, TEXT_ALIGN_LEFT, colourWhite)
     sasl.gl.drawText(
         fontLatoBold,
         110,
-        862,
+        867,
         string.format("%1.f", get(tas)),
         26,
         false,
@@ -33,7 +33,7 @@ function draw()
     sasl.gl.drawText(
         fontLatoBold,
         10,
-        832,
+        837,
         string.format("%03.f", get(windDirection)) .. "°" .. " /   " .. string.format("% 3.f", get(windSpeed)),
         26,
         false,
