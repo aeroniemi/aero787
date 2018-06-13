@@ -1,4 +1,4 @@
-# aero787
+![aero787 logo](6.png)
 
 ## What is it?
 
